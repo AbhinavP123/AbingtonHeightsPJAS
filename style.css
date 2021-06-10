@@ -1,15 +1,24 @@
 *{
 	margin: 0;
+	/* creates the amount of space around an object */
 	padding: 0;
+	/* padding is similar to margin, but it creates the space all around an oject */
 	font-family: 'Rokkitt', serif;
+	/* this was taken from a google source, it definees the font type */
 }
 .header{
 	min-height: 90vh;
+	/* vh is a type of length unit. I can also use px, which will be seen later in this code */
 	width: 100%;
+	/* width of the page */
 	background-color: #c9def2;
+	/* #c9def2 is a code from hex color, which is a CSS source for various colors */
 	background-position: center;
+	/* this will center the header to the center of the page */
 	background-size: cover;
+	/* this will set the size of the background image */
 	position: relative;
+	/* CSS will automatically place this element where it thinks is right */
 }
 .header-projects{
 	min-height: 120vh;
@@ -21,8 +30,11 @@
 }
 nav{
 	display: flex;
+	/* flex allows for easier positioning and makes the elements line up side by side. */
 	padding: 2% 6%;
+	/* padding with pixels */
 	justify-content: space-between;
+	/* space-between allows for the browser to evenly space out the content */
 	align-items: center;
 }
 nav img{
@@ -49,6 +61,7 @@ nav-classes img{
 .nav-links ul li a{
 	color: #333a36;
 	text-decoration: none;
+	/* this takes away the link underlining and different coloring */
 	font-size: 25px;
 }
 .title{
@@ -59,6 +72,8 @@ nav-classes img{
 .title-classes{
 	font-size: 25px;
 	transform: translate(0%, 50%);
+	/* this allows the programmer to move the specific element to a specific doordinate on the "plane". */
+	/* As you will see, I used this to position many items. */
 	color: #333a36;
 	text-align: center;
 }
@@ -78,7 +93,9 @@ nav-classes img{
 	color: #333a36;
 	font-size: 23px;
 	line-height: 2;
+	/* this is for creating line pacing. It is like the Google Docs feature */
 	position: absolute;
+	/* creates the position of the item to be in relation to other elements */
     top: 70%;
 	transform: translate(20%, 35%);
 	text-align: center;
@@ -159,9 +176,11 @@ projectpic img{
 
 .contact-form{
   box-sizing: border-box;
+  /* this allows for a box to appear around the contact form. I included this to create a more uniform page */
   padding: 100px;
   background-color: #fffdfc;
   border: 1px solid black;
+  /* this creates a color along the border of the box */
   font-size: 25px;
   position: absolute;
   text-align: center;
@@ -172,8 +191,10 @@ projectpic img{
 /* Learn More */
 .learnMore{
 	min-height: 20vh;
+	/* creates the height of the learn more section */
 	width: 80%;
 	margin: auto;
+	/* this will horizontally center the item */
 	text-align: left;
 	padding-top: 20px;
 	text-decoration: none;
